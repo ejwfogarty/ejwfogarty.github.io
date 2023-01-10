@@ -1,10 +1,80 @@
 body{
     background-color: #bad80a;
+    color: white;
+ 
+}
+.container{
+    padding: 30pt;
+}
+header{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    margin-top: 5vh;
 }
 h1{
-    
-    font-family: "Comic Sans MS";
-    font-size: 50pt;
+    font-family: alternate-gothic-no-1-d, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 18vw;
+    font-size: 22vw;
+    text-transform: uppercase;
+    text-align: left;
+}
+h2{
+    font-size: 60pt;
+    font-family: alternate-gothic-no-1-d, sans-serif;
+    font-weight: bold;
+    margin: 0;
+
+}
+nav{
+    padding: 0;
+    margin: 0;
+    font-size: 20pt;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav a{
+    text-decoration: none;
+    color: inherit;
+}
+.content{
+    font-size: 16pt;
+    font-family: alternate-gothic-no-2-d, sans-serif;
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    flex-direction: row;
+    margin: 0;
+    background-color: #acbc11;
+    padding: 10pt;
+}
+.left{
+width: 30%;
+}
+.left img{
+    margin-left: 5vw;
+    width: 50%;
+}
+
+
+
+.right{
+    width:70%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.right img{
+    margin: 0 20pt;
+    width:30%;
+    height:fit-content;
+}
+.right p{
+    width: 70%;
 }
