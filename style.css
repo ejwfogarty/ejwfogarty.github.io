@@ -78,3 +78,14 @@ width: 30%;
 .right p{
     width: 70%;
 }
+
+footer{
+    height: 15vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+footer img{
+width: 100%;    
+overflow: hidden;
+}
