@@ -36,7 +36,8 @@ hr{
 nav{
     padding: 0;
     margin: 0;
-    font-size: 20pt;
+    font-size: 1.5em;
+    line-height: 1.5em;
 }
 
 nav ul{
@@ -48,6 +49,17 @@ nav ul{
 nav a{
     text-decoration: none;
     color: inherit;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+nav a:hover{
+    background-color: white;
+    color: #bad80a;
+    
+    transition:ease 0.1s;
+    
+    
 }
 
 .content{
@@ -113,6 +125,9 @@ footer h1{
 @media only screen and (max-width: 1000px){
     .content{flex-direction: column;
     };
+    nav{
+        width: 100%;
+    }
     .left{
         flex-direction: column;
         width: 100%;
