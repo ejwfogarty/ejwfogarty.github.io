@@ -36,20 +36,32 @@ hr{
 nav{
     padding: 0;
     margin: 0;
-    font-size: 20pt;
+    font-size: 1.5em;
 }
 
 nav ul{
     list-style: none;
-    margin: 0;
     padding: 0;
-}
 
+}
+nav li{
+    margin-bottom: 10px;
+}
 nav a{
     text-decoration: none;
     color: inherit;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+a:hover{
+    background-color: white;
+    color: #acbc11;
 }
 
+a:visited{
+    color: Red;
+}
 .content{
     font-size: 16pt;
     font-family: alternate-gothic-no-2-d, sans-serif;
