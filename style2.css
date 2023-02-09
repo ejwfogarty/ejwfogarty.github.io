@@ -7,8 +7,7 @@
     width: 80vw;
     height: 100vh;
     margin: auto;
-    display: flex;
-    flex-direction: row;
+    overflow: hidden;
     align-content: center;
     text-align: left;
 }
@@ -17,6 +16,7 @@
     height: 100%;
     padding-left: 20px;
     font-family: light;
+    float: left;
 }
 h1{
     font-size: 3em;
@@ -24,20 +24,31 @@ h1{
 .col1{
     background-color: red;
 }
-.col1 h1{
-position: relative;
-top: 40%
-}
-.col2 h1{
-    position: relative;
-    top: 50%
-}
 .rule{
     border-top: 3px solid #84a1c9;
-    width:22%;
-    position: absolute;
-    top: 47%;
+    width: 100%;
     height: 1px;
+    position: relative;
+}
+.name{
+    height: 200px;
+    width: 80vw;
+    position: absolute;
+    top: 40%;
+    margin: auto;
+    z-index: 1000000000000000000;}
+
+
+
+.name .fogarty{
+left: 15.2%;   
+position: absolute;
+}
+.name .rule{
+    border-top: 3px solid #84a1c9;
+    width: 28.2%;
+    height: 1px;
+    position: absolute;
 }
 nav{
     position: relative;
