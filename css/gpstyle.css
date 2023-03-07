@@ -1,0 +1,118 @@
+*{  margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+.container{
+    width: 100vh;
+    padding: 0;
+    margin: 0;
+}
+section{
+    padding: 150px;
+    margin: auto;
+    height: 100vh;
+    width: 1200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    column-count: 3;
+    column-gap: 15px;
+    font-family: 'Gothic A1', sans-serif;
+    position: relative;
+}
+p{margin: auto;}
+.junebug{
+    background-image: url(../gpphotos/dt_junebug.jpg);
+}
+
+.liberty{
+    background-image: url(../gpphotos/dt_liberty.jpg);
+}
+
+.wateringhole{
+        background-image: url(../gpphotos/dt_watering_hole.jpg);
+
+}
+
+.gothic{
+        background-image: url(../gpphotos/dt_gothic.jpg);
+}
+
+.waterfountain{
+        background-image: url(../gpphotos/dt_waterfountain.jpg);
+
+}
+
+.crutch{
+        background-image: url(../gpphotos/dt_crutch.jpg);
+
+}
+
+.gun{
+        background-image: url(../gpphotos/dt_boys_with_gun.jpg);
+
+}
+
+.invisible{
+    background-image: url(../gpphotos/m_invisible_man.jpg);
+
+}
+
+.couple{
+    background-image: url(../gpphotos/dt_couple.jpg);
+
+}
+
+
+@media only screen and (max-width: 800px){
+.container{
+    width: 100vh;
+}
+  section{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 50px;
+  }
+
+    .junebug{
+        background-image: url(../gpphotos/m_junebug.jpg);
+    }
+    
+    .liberty{
+        background-image: url(../gpphotos/m_liberty.jpg);
+    }
+    
+    .wateringhole{
+            background-image: url(../gpphotos/m_watering_hole.jpg);
+    
+    }
+    
+    .gothic{
+            background-image: url(../gpphotos/m_gothic.jpg);
+    }
+    
+    .waterfountain{
+            background-image: url(../gpphotos/m_waterfountain.jpg);
+    
+    }
+    
+    .crutch{
+            background-image: url(../gpphotos/m_crutch.jpg);
+    
+    }
+    
+    .gun{
+            background-image: url(../gpphotos/m_boys_with_gun.jpg);
+    
+    }
+    
+    .invisible{
+        background-image: url(../gpphotos/m_invisible_man.jpg);
+    
+    }
+    
+}
