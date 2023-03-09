@@ -11,10 +11,11 @@ body{
     margin: auto;
     position: relative;
     font-size: 8pt;
+    overflow-x: hidden;
 
 }
 section{
-    height: 120vh;
+    height: 100vh;
     width: 100%;
     background-size: contain;
     background-position: top;
@@ -30,7 +31,7 @@ p img{
 }
 section p{
     position: relative;
-    top:80vh;
+    top:90%;
     column-count: 3;
     column-gap: 15px;
     padding: 0 100px;
@@ -135,9 +136,7 @@ section p{
     .junebug{
         background-image: url(../gpphotos/m_junebug.jpg);
     }
-    .junebug .titlerow{
 
-    }
  
     .liberty{
         background-image: url(../gpphotos/m_liberty.jpg);
