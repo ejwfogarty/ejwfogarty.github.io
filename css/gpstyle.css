@@ -4,30 +4,62 @@
 body{
     background-color: black;
 }
-.container{
-    width: 100vh;
+.gpcontainer{
+    width: 70vw;
+    max-width: 1200px;
     padding: 0;
-    margin: 0;
+    margin: auto;
+    position: relative;
+    font-size: 8pt;
+
 }
 section{
-    padding: 150px;
-    margin: auto;
-    height: 100vh;
-    width: 1200px;
-    background-size: cover;
-    background-position: center;
+    height: 120vh;
+    width: 100%;
+    background-size: contain;
+    background-position: top;
     background-repeat: no-repeat;
     color: white;
+    font-family: 'Gothic A1', sans-serif;
+    position:relative;
+}
+p img{
+    height: 120px;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+section p{
+    position: relative;
+    top:80vh;
     column-count: 3;
     column-gap: 15px;
-    font-family: 'Gothic A1', sans-serif;
-    position: relative;
+    padding: 0 100px;
+
 }
-p{margin: auto;}
+
 .junebug{
     background-image: url(../gpphotos/dt_junebug.jpg);
 }
 
+.junebug .titlerow{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+    top: 40%;
+}
+.titlerow p{
+    margin-top: 34%;
+}
+.junebug img{
+    width: 60%;
+}
+.titlerow p{
+    width: 40%;
+    top: 0;
+    column-count: 1;
+}
 .liberty{
     background-image: url(../gpphotos/dt_liberty.jpg);
 }
@@ -57,31 +89,56 @@ p{margin: auto;}
 }
 
 .invisible{
-    background-image: url(../gpphotos/m_invisible_man.jpg);
+    background-image: url(../gpphotos/dt_invisible_man.jpg);
 
 }
 
 .couple{
     background-image: url(../gpphotos/dt_couple.jpg);
+    background-position: top;
 
 }
-
-
+@media only screen and (max-width: 1200px){
+    section p{
+        column-count: 2;
+        padding: 0 50px;
+    }
+    .junebug .titlerow{
+        flex-direction: column;
+        top: 60%;
+        height: 20vh;
+        gap: 0;
+    }
+    .titlerow p{
+        margin-top: -70px;
+    }
+    .titlerow img{
+        padding: 0 50px;
+    }
+}
 @media only screen and (max-width: 800px){
-.container{
-    width: 100vh;
-}
-  section{
+.gpcontainer{
     width: 100%;
-    height: 100vh;
-    margin: 0;
-    padding: 50px;
-  }
+}
 
+section{
+    width: 100%;
+    height: 120vh;
+    
+}
+
+section p{
+    column-count: 1;
+    top: 100vh;
+
+}
     .junebug{
         background-image: url(../gpphotos/m_junebug.jpg);
     }
-    
+    .junebug .titlerow{
+
+    }
+ 
     .liberty{
         background-image: url(../gpphotos/m_liberty.jpg);
     }
@@ -114,5 +171,7 @@ p{margin: auto;}
         background-image: url(../gpphotos/m_invisible_man.jpg);
     
     }
-    
+    .couple{
+        background-image: url(../gpphotos/m_couple.jpg);
+    }
 }
