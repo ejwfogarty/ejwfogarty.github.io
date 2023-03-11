@@ -23,10 +23,25 @@ section{
     font-family: 'Gothic A1', sans-serif;
     position:relative;
 }
+/* Drop caps */
 p img{
     height: 50pt;
     float: left;
     margin: 0 10px 10px 0;
+}
+/*  */
+.grain{
+    height: 1150%;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../gpphotos/grain.png);
+    z-index: 3;
+    mix-blend-mode: screen;
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 .quote{
     width: 60%;
@@ -35,11 +50,31 @@ p img{
 }
 footer{
     height: 30vh;
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: auto;
 }
+footer p{
+    width: 40%;
+}
+.socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+svg{
+    fill: white;
+}
+
+/* moving paragraphs up in sections with quotes in them */
 .wateringhole p{
     margin-top: -250pt;
 }
+/*  */
+
+
 section p{
     position: relative;
     top:100vh;
@@ -50,9 +85,7 @@ section p{
     z-index: 2;
 }
 
-.junebug{
-    background-image: url(../gpphotos/dt_junebug.jpg);
-}
+
 
 .junebug .titlerow{
     display: flex;
@@ -73,6 +106,10 @@ section p{
     width: 40%;
     top: 0;
     column-count: 1;
+}
+/* Image Backgrounds */
+.junebug{
+    background-image: url(../gpphotos/dt_junebug.jpg);
 }
 .liberty{
     background-image: url(../gpphotos/dt_liberty.jpg);
@@ -123,7 +160,11 @@ section p{
     section p{
         column-count: 2;
         padding: 0 50px;
-        top: 80vh
+        top: 90vh
+    }
+    .quote{
+        width: 80%;
+        left: 10%;
     }
     .junebug .titlerow{
         flex-direction: column;
@@ -157,12 +198,17 @@ section p{
     top: 135vh;
 
 }
+.quote{
+    width: 90%;
+    left: 5%;
+}
 footer{
     height: 80vh;
 }
 .quote{
     top: 30vh;
 }
+/* Mobile versions of background images */
     .junebug{
         background-image: url(../gpphotos/m_junebug.jpg);
     }
