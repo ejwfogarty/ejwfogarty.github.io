@@ -12,10 +12,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;900&display=swap" rel="stylesheet">
 </head>
+
+
 <body>
     <div class="gpcontainer">
         <div class="grain"></div>
-        <div class="grainw"></div>
 
         <section class="junebug">
 
@@ -34,8 +35,8 @@
             </div>
 
         </section>
-    <section class="liberty ">
-        <p><img src="gpphotos/dropcaps/w.png">ere it not for the officer’s old fashioned
+    <section class="liberty">
+        <p><img src="gpphotos/dropcaps/w.png" class="caps">ere it not for the officer’s old fashioned
             uniform, you could
             be forgiven for thinking that
             the picture was taken at one of
@@ -66,8 +67,8 @@
     </section>
 
     <section class="slide wateringhole">
-        <img src="/gpphotos/threadquote.png" class="quote">
-        <p><img src="gpphotos/dropcaps/t.png">he photograph is one of more than 50
+        <img src="gpphotos/threadquote.png" class="quote hidden">
+        <p><img src="gpphotos/dropcaps/t.png" class="caps">he photograph is one of more than 50
             Parks images currently on show at Jack
             Shainman Gallery in New York – in fact two
             galleries, because the exhibition spans both
@@ -94,7 +95,7 @@
     </section>
 
     <section class="slide gothic">
-        <p><img src="gpphotos/dropcaps/o.png">ne of the earliest photographs to make
+        <p><img src="gpphotos/dropcaps/o.png" class="caps">ne of the earliest photographs to make
             Parks’s name, American Gothic (1942),
             is included in the show. Taken when he was working
             for the FSA, it was inspired by Grant Wood’s much reproduced
@@ -122,8 +123,8 @@
     </section>
 
     <section class="slide waterfountain">
-        <img src="gpphotos/sidelinequote.png" class="quote" alt="">
-        <p><img src="gpphotos/dropcaps/a.png">fter taking a job as a railroad
+        <img src="gpphotos/sidelinequote.png" class="quote hidden" alt="">
+        <p><img src="gpphotos/dropcaps/a.png" class="caps">fter taking a job as a railroad
             porter, he bought a camera
             in a pawnshop in 1937,
             inspired by photos by the great documentary
@@ -151,7 +152,7 @@
     </section>
 
     <section class="slide crutch">
-        <p class="left col1"><img src="gpphotos/dropcaps/t.png">here was almost nothing her father couldn’t do if he
+        <p class="left col1"><img src="gpphotos/dropcaps/t.png" class="caps">here was almost nothing her father couldn’t do if he
             wanted, says Leslie Parks with a laugh: he had the
             kind of energy that burned up the room. “There was always
             this moving forward with him,” she says. “No giving up or
@@ -179,8 +180,8 @@
     </section>
 
     <section class="slide gun">
-        <img src="gpphotos/45mm.png" class="quote">
-        <p><img src="gpphotos/dropcaps/i.png">n another image there are two black boys, one
+        <img src="gpphotos/45mm.png" class="quote hidden">
+        <p><img src="gpphotos/dropcaps/i.png" class="caps">n another image there are two black boys, one
             brandishing what could be a real pistol and pretending
             to fire it, but alongside them is a white boy, a mop of
             blond hair grinning for the camera – apparently a friend.
@@ -214,7 +215,7 @@
     </section>
 
     <section class="slide invisible">
-        <p><img src="gpphotos/dropcaps/y.png">et the pictures that truly resonate, perhaps, are the
+        <p><img src="gpphotos/dropcaps/y.png" class="caps">et the pictures that truly resonate, perhaps, are the
             gentler ones, where he stepped away
             from outright activism and allowed his
             poet’s eye to roam. Commissioned by Life
@@ -235,7 +236,7 @@
             or headlines.</p>
     </section>
     <section class="slide couple">
-        <p class="special col1"><img src="gpphotos/dropcaps/i.png">n segregated black communities in the
+        <p class="special col1"><img src="gpphotos/dropcaps/i.png" class="caps">n segregated black communities in the
             South there is quietness and normality
             alongside inequality: boys going fishing, girls
             playing in the water, women gossiping over
@@ -266,5 +267,22 @@
         </div>
     </footer>
     </div>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            console.log(entry)
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            } else {
+                entry.target.classList.remove('show');
+            }
+        });
+    });
+    
+    const hiddenElements = document.querySelectorAll('.hidden');
+    hiddenElements.forEach((el) => observer.observe(el));
+    
+    </script>
 </body>
 </html>

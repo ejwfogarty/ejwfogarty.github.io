@@ -23,13 +23,7 @@ section{
     font-family: 'Gothic A1', sans-serif;
     position:relative;
 }
-/* Drop caps */
-p img{
-    height: 50pt;
-    float: left;
-    margin: 0 10px 5px 0;
-}
-/*  */
+
 .grain{
     height: 1110%;
     width: 100vw;
@@ -37,7 +31,7 @@ p img{
     top: 0;
     left: 0;
     background-image: url(../gpphotos/grain2.png);
-    z-index: 3;
+    z-index: 2;
     mix-blend-mode: screen;
     background-size: contain;
     background-repeat: repeat-y;
@@ -55,11 +49,32 @@ p img{
     background-size: contain;
     background-repeat: repeat-y;
 }
+
+/* Drop caps */
+.caps{
+    height: 50pt;
+    float: left;
+    margin: 0 10px 5px 0;
+    z-index: 10;
+
+}
+.caps:hover{
+    filter: blur(5px);
+}
+/*  */
 .quote{
     width: 60%;
     left:20%;
     position: relative;
-    top: 10vh;
+    top:2vh;
+    transition: blur .1s ease-in-out;
+    z-index: 8;
+}
+.quote:hover{
+    filter: blur(2px);
+}
+.wateringhole .quote{
+    top: -5vh;
 }
 footer{
     height: 200pt;
@@ -102,7 +117,9 @@ section p{
     padding: 0 100px;
     margin-bottom: 200pt;
     z-index: 2;
+    transition: all width .5s ease-in-out;
 }
+
 
 
 
@@ -191,6 +208,25 @@ section p{
     background-position: top;
 
 }
+/* slider animation */
+.hidden {
+    opacity: 0;
+    filter: blur(100px);
+    /* transform: translateX(-100%); */
+    transition: all 2s ease-in-out;
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    /* transform: translateX(0); */
+}
 @media only screen and (max-width: 1200px){
     .gpcontainer{
         width: 100%;
@@ -205,9 +241,8 @@ section p{
         top: 90vh
     }
     .quote{
-        width: 70%;
-        left: 15%;
-        top: 10vh;
+        width: 60%;
+        left: 20%;
     }
     .junebug .titlerow{
         flex-direction: column;
@@ -243,17 +278,19 @@ background-position: center;
 
 section p{
     column-count: 1;
-    top: 135vh;
+    top: 145vh;
     padding: 0 50px;
 
 }
 .quote{
     width: 90%;
     left: 5%;
+    top: 45vh;
+
 }
 
-.quote{
-    top: 45vh;
+.wateringhole .quote{
+    top: 35vh;
 }
 .couple p{
     padding: 0 50px;
