@@ -27,21 +27,33 @@ section{
 p img{
     height: 50pt;
     float: left;
-    margin: 0 10px 10px 0;
+    margin: 0 10px 5px 0;
 }
 /*  */
 .grain{
-    height: 1150%;
+    height: 1110%;
     width: 100vw;
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url(../gpphotos/grain.png);
+    background-image: url(../gpphotos/grain2.png);
     z-index: 3;
     mix-blend-mode: screen;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: contain;
+    background-repeat: repeat-y;
 
+}
+.grainw{
+    height: 1110%;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../gpphotos/grainw.png);
+    z-index: 3;
+    mix-blend-mode: multiply;
+    background-size: contain;
+    background-repeat: repeat-y;
 }
 .quote{
     width: 60%;
@@ -49,16 +61,16 @@ p img{
     position: relative;
 }
 footer{
-    height: 30vh;
+    height: 200pt;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 80%;
+    width: 60%;
     margin: auto;
+    color: white;
+    text-align: center;
 }
-footer p{
-    width: 40%;
-}
+
 .socials{
     display: flex;
     flex-direction: row;
@@ -70,6 +82,12 @@ svg{
 
 /* moving paragraphs up in sections with quotes in them */
 .wateringhole p{
+    margin-top: -250pt;
+}
+.waterfountain p{
+    margin-top: -250pt;
+}
+.gun p{
     margin-top: -250pt;
 }
 /*  */
@@ -159,7 +177,7 @@ section p{
     }
     section p{
         column-count: 2;
-        padding: 0 50px;
+        padding: 0 150px;
         top: 90vh
     }
     .quote{
@@ -178,13 +196,11 @@ section p{
         width: 60%;
     }
     .titlerow img{
-        padding-left: 50px;
+        padding-left: 45px;
     }
-    footer{
-        height: 50vh;
-    }
+   
 }
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 700px){
 
 
 section{
@@ -196,15 +212,14 @@ background-position: center;
 section p{
     column-count: 1;
     top: 135vh;
+    padding: 0 50px;
 
 }
 .quote{
     width: 90%;
     left: 5%;
 }
-footer{
-    height: 80vh;
-}
+
 .quote{
     top: 30vh;
 }
