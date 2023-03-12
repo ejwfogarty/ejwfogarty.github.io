@@ -59,6 +59,7 @@ p img{
     width: 60%;
     left:20%;
     position: relative;
+    top: 10vh;
 }
 footer{
     height: 200pt;
@@ -125,6 +126,29 @@ section p{
     top: 0;
     column-count: 1;
 }
+
+.special{
+    margin-left: 66%;
+    width: 25%;
+    top: 10vh
+;}
+.col1{
+    column-count: 1;
+    padding: 0;
+
+}
+.crutch p{
+    width: 22%;
+}
+.left{
+    top: 40vh;
+    margin-left: 150px;
+}
+.right{
+    top: 40vh;
+    left: 68%;
+    position: absolute;
+}
 /* Image Backgrounds */
 .junebug{
     background-image: url(../gpphotos/dt_junebug.jpg);
@@ -181,8 +205,9 @@ section p{
         top: 90vh
     }
     .quote{
-        width: 80%;
-        left: 10%;
+        width: 70%;
+        left: 15%;
+        top: 10vh;
     }
     .junebug .titlerow{
         flex-direction: column;
@@ -198,7 +223,14 @@ section p{
     .titlerow img{
         padding-left: 45px;
     }
-   
+    .special{
+        width: 30%;
+        padding: 0;
+        margin-left: 0;
+        top: 0;
+        left: 60%;
+        
+    }
 }
 @media only screen and (max-width: 700px){
 
@@ -221,7 +253,31 @@ section p{
 }
 
 .quote{
-    top: 30vh;
+    top: 45vh;
+}
+.couple p{
+    padding: 0 50px;
+}
+.crutch p{
+    width: auto;
+    margin: 0;
+    top: 110vh
+}
+.left,.right{
+    width: auto;
+    left: 0;
+    margin-left: 0;
+    padding: 0 50px;
+    position: relative;
+    margin: 0;
+    
+}
+.special{
+    width: auto;
+    padding: 0 150px;
+    margin-left: 0;
+    top: 40vh;
+    left: 0;
 }
 /* Mobile versions of background images */
     .junebug{
