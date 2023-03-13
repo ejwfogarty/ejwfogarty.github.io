@@ -254,7 +254,7 @@ section p{
         width: 60%;
     }
     .titlerow img{
-        padding-left: 45px;
+        padding-left: 135px;
     }
     .special{
         width: 30%;
@@ -286,7 +286,9 @@ section p{
     top: 45vh;
 
 }
-
+.junebug img{
+    padding-left: 45px;
+}
 .wateringhole .quote{
     top: 35vh;
 }
