@@ -67,12 +67,9 @@ section{
     left:20%;
     position: relative;
     top:2vh;
-    transition: blur .1s ease-in-out;
     z-index: 8;
 }
-.quote:hover{
-    filter: blur(2px);
-}
+
 .wateringhole .quote{
     top: -5vh;
 }
