@@ -39,7 +39,7 @@
 .columns {
   width: 100%;
   float: left;
-  box-sizing:border-box; }
+  box-sizing: border-box; }
 
 /* For devices larger than 400px */
 @media (min-width: 400px) {
@@ -49,7 +49,7 @@
 }
 
 /* For devices larger than 550px */
-@media (min-width: 1200px) {
+@media (min-width: 550px) {
   .container {
     width: 80%; }
   .column,
@@ -409,7 +409,7 @@ there.
 @media (min-width: 550px) {}
 
 /* Larger than tablet */
-@media (min-width: 750px) { }
+@media (min-width: 750px) {}
 
 /* Larger than desktop */
 @media (min-width: 1000px) {}
