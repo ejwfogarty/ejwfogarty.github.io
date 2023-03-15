@@ -112,7 +112,6 @@ section p{
     column-count: 3;
     column-gap: 15px;
     padding: 0px;
-    margin-bottom: 200pt;
     z-index: 2;
     transition: all width .5s ease-in-out;
 }
@@ -146,7 +145,8 @@ section p{
 .special{
     margin-left: 66%;
     width: 25%;
-    top: 10vh
+    top: 10vh;
+    padding: 0 150px
 ;}
 .crutch p{
     top: 0;
@@ -259,6 +259,9 @@ section p{
         height: 20vh;
         gap: 0;
     }
+    .junebug p{
+        margin-left: 0;
+    }
     
     .titlerow p{
         margin-top: -70px;
@@ -268,11 +271,11 @@ section p{
         padding-left: 135px;
     }
     .special{
-        width: 30%;
-        padding: 0;
+        width: 50%;
         margin-left: 0;
         top: 0;
-        left: 60%;
+        left: 50%;
+        padding: 0 50px;
         
     }
     
