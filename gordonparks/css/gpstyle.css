@@ -26,7 +26,7 @@ section{
 }
 
 .grain{
-    height: 1110%;
+    height: 1300vh;
     width: 100vw;
     position: absolute;
     top: 0;
@@ -39,7 +39,7 @@ section{
 
 }
 .grainw{
-    height: 1110%;
+    height: 1300vh;
     width: 100vw;
     position: absolute;
     top: 0;
@@ -234,6 +234,12 @@ section p{
     .gpcontainer{
         width: 100%;
     }
+    .grain{
+        height: 1380vh;
+    }
+    .grainw{
+        height: 1380vh;
+    }
     section{
         width: 100%;
         height: 150vh;
@@ -288,7 +294,12 @@ height: 220vh;
 background-size: contain; 
 background-position: top;
 }
-
+.grain{
+    height: 2000vh;
+}
+.grainw{
+    height: 2000vh;
+}
 section p{
     column-count: 1;
     top: 110vh;
