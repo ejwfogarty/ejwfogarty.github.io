@@ -93,7 +93,6 @@ footer{
 svg{
     fill: white;
 }
-
 /* moving paragraphs up in sections with quotes in them */
 .wateringhole p{
     margin-top: -250pt;
@@ -112,14 +111,16 @@ section p{
     top:100vh;
     column-count: 3;
     column-gap: 15px;
-    padding: 0 100px;
+    padding: 0px;
     margin-bottom: 200pt;
     z-index: 2;
     transition: all width .5s ease-in-out;
 }
 
 
-
+.notvisible{
+    visibility: hidden;
+}
 
 .junebug .titlerow{
     display: flex;
@@ -146,21 +147,25 @@ section p{
     width: 25%;
     top: 10vh
 ;}
+.crutch p{
+    top: 0;
+}
 .col1{
     column-count: 1;
-    padding: 0;
 
 }
-.crutch p{
-    width: 22%;
+
+.left,.right{
+    top: 0;
+    width: 25%;
+
 }
+
 .left{
-    top: 40vh;
-    margin-left: 150px;
+    margin-left: 100px;
 }
 .right{
-    top: 40vh;
-    left: 68%;
+    left: 65%;
     position: absolute;
 }
 /* Image Backgrounds */
@@ -235,7 +240,13 @@ section p{
     section p{
         column-count: 2;
         padding: 0 150px;
-        top: 90vh
+        top: 95vh
+    }
+    section .crutch p{
+        padding: 0;
+    }
+    .crutchcontainer{
+        padding: 0 150px;
     }
     .quote{
         width: 60%;
@@ -268,14 +279,14 @@ section p{
 
 
 section{
-height: 165vh;   
+height: 220vh;   
 background-size: contain; 
 background-position: top;
 }
 
 section p{
     column-count: 1;
-    top: 118vh;
+    top: 100vh;
     padding: 0 50px;
 
 }
@@ -284,6 +295,10 @@ section p{
     left: 5%;
     top: 35vh;
 
+}
+.junebug{
+    height: 130vh;
+    background-size: cover;
 }
 .junebug img{
     padding-left: 45px;
@@ -297,7 +312,7 @@ section p{
 .crutch p{
     width: auto;
     margin: 0;
-    top: 110vh
+    top: 90vh
 }
 .left,.right{
     width: auto;
@@ -306,13 +321,12 @@ section p{
     padding: 0 50px;
     position: relative;
     margin: 0;
-    
+    top: 10vh
 }
 .special{
     width: auto;
     padding: 0 150px;
     margin-left: 0;
-    top: 40vh;
     left: 0;
 }
 /* Mobile versions of background images */
